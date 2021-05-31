@@ -7,7 +7,7 @@ import Navbar from '../components/Navbar'
 import PostCard from '../components/PostCard'
 import { formatSlug } from '../utils/slugFormat'
 
-const NOTION_BLOG_ID = process.env.NOTION_BLOG_ID || '7021cba3b8a04865850473d4037762ad'
+const NOTION_BLOG_ID = process.env.NOTION_BLOG_ID || '480b51d2eb784b4db88250e705579e00'
 
 export interface Author {
   id: string
@@ -35,9 +35,9 @@ export const getAllPosts = async (): Promise<Post[]> => {
 
 export const getPostView = async (slug: string): Promise<number> => {
   return await axios
-    .get('https://api.splitbee.io/v1/blog.spencerwoo.com/pageviews', {
+    .get('https://api.splitbee.io/v1/blog.hncaa.cn/pageviews', {
       params: { page: slug },
-      headers: { 'x-api-key': process.env.SPLITBEE_API_TOKEN }
+      headers: { 'x-api-key': process.env.SPLITBEE_API_TOKEN || 'JIWIVOIDTT7P' }
     })
     .then(res => res.data.count)
 }
@@ -62,7 +62,7 @@ const HomePage = ({ posts }: { posts: Post[] }) => {
   return (
     <>
       <Head>
-        <title>Spencer&apos;s Blog</title>
+        <title>Leftchest&apos;s Blog</title>
       </Head>
       <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4 sm:px-6 justify-center flex-grow max-w-3xl">
@@ -72,7 +72,7 @@ const HomePage = ({ posts }: { posts: Post[] }) => {
             <div className="inline-block shadow-lg rounded-full w-18 h-18">
               <Image className="rounded-full" src="/images/avatar.png" alt="avatar" width="100%" height="100%" />
             </div>
-            <div className="mt-8 text-2xl font-bold dark:text-white">Spencer&apos;s Blog</div>
+            <div className="mt-8 text-2xl font-bold dark:text-white">Leftchest&apos;s Blog</div>
             <div className="mt-2 text-gray-400">
               Check out{' '}
               <Link href="/friends">
