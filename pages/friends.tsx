@@ -71,7 +71,7 @@ const Friends = () => {
   return (
     <>
       <Head>
-        <title>Friends & Guestbook - Spencer&apos;s Blog</title>
+        <title>Friends & Guestbook - Leftchest&apos;s Blog</title>
       </Head>
       <div className="min-h-screen flex flex-col bg-gray-50 dark:bg-gray-900">
         <div className="container mx-auto px-4 sm:px-6 justify-center flex-grow max-w-3xl">
@@ -101,14 +101,14 @@ const Friends = () => {
             </div>
 
             <div className="text-center text-gray-400 mt-4">
-              <a className="rounded text-purple-400 hover:text-purple-300" href="mailto:spencer.wushangbo@gmail.com">
+              <a className="rounded text-purple-400 hover:text-purple-300" href="mailto:leftchest@foxmail.com">
                 Email me
               </a>{' '}
               if you want to get in touch!
             </div>
 
             <div className="mt-8">
-              <DiscussionEmbed shortname="spencerwoo" config={{ identifier: 'spencer-blog-guestbook' }} />
+              <DiscussionEmbed shortname="hncaa" config={{ identifier: 'leftchest-blog-guestbook' }} />
             </div>
           </div>
         </div>
