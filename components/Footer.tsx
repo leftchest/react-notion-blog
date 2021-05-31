@@ -7,22 +7,19 @@ const Footer = () => {
         <div>
           Powered by{' '}
           <a className="hover:text-white" href="https://nextjs.org/">
-            Next.js
+            Next
           </a>
           ,{' '}
           <a className="hover:text-white" href="https://tailwindcss.com/">
-            Tailwind CSS
+            Tailwind
           </a>
           ,{' '}
-          <a className="hover:text-white" href="https://notion.so">
-            Notion
-          </a>{' '}
           and{' '}
           <a className="hover:text-white" href="https://www.typescriptlang.org/">
             TypeScript.
           </a>
         </div>
-        <div>Spencer Woo © 2017-{currentYear}</div>
+        <div>Leftchest @ Spencer Woo © {currentYear}</div>
       </div>
     </footer>
   )
